@@ -1,0 +1,25 @@
+# effective-broccoli
+# Student Management System
+
+def add_student():
+    name = input("Enter name: ")
+    roll = input("Enter roll number: ")
+    mark = int(input("Enter mark: "))
+
+    student = {
+        "name": name,
+        "roll": roll,
+        "mark": mark
+    }
+
+    students.append(student)
+    print("Student added successfully")
+
+
+def show_students():
+    if len(students) == 0:
+        print("No students found")
+    else:
+        for s in students:
+            print("Name:", s["name"])
+            print("Roll:", s["roll"])
